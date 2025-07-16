@@ -78,24 +78,18 @@ These metrics show the model captures **meaningful return patterns**, enabling *
 
 ## 📈 Visual Outputs & Analysis
 ------------
-### ✅ 1. Cumulative Strategy PnL vs Buy & Hold
-- The **blue curve (Strategy PnL)** grows steadily, showing consistent profits.  
-- The **orange curve (Buy & Hold)** remains mostly flat.  
 
-**Key takeaway:** The model significantly **outperforms passive strategies**, demonstrating **clear alpha generation**.
-
-![Cumulative Strategy PnL](results/plots/cumulative_pnl_vs_buyhold.png)
+### ✅ 1. True vs Predicted Returns (Full Series)
+- Predicted returns follow the **overall trend** but are **smoother** (noise reduction).  
+- Captures **directional movements** well, even if extreme spikes are dampened.
+![Rolling Directional Accuracy](results/plots/true_vs_predicted_full.png)
 
 ---
 
-### ✅ 2. Rolling Directional Accuracy
-- Maintains **65–75% accuracy**, well above the **50% random baseline**.  
-- Robust to market regime changes.  
-
-**Key takeaway:** The model **retains predictive edge even during volatility**.
-
-![Rolling Directional Accuracy](results/plots/rolling_directional_accuracy.png)
-
+### ✅ 2. True vs Predicted 6h Returns (Sample of 500)
+- Predicted values **closely track ups & downs**.  
+- Better at **medium-term trends** than **high-frequency noise**.
+![Rolling Directional Accuracy](results/plots/true_vs_predicted_sample.png)
 ---
 
 ### ✅ 3. True vs Predicted Scatter Plot
@@ -108,17 +102,24 @@ These metrics show the model captures **meaningful return patterns**, enabling *
 
 ---
 
-### ✅ 4. True vs Predicted Returns (Full Series)
-- Predicted returns follow the **overall trend** but are **smoother** (noise reduction).  
-- Captures **directional movements** well, even if extreme spikes are dampened.
-![Rolling Directional Accuracy](results/plots/true_vs_predicted_full.png)
+### ✅ 4. Rolling Directional Accuracy
+- Maintains **65–75% accuracy**, well above the **50% random baseline**.  
+- Robust to market regime changes.  
+
+**Key takeaway:** The model **retains predictive edge even during volatility**.
+
+![Rolling Directional Accuracy](results/plots/rolling_directional_accuracy.png)
+
 
 ---
+### ✅ 5. Cumulative Strategy PnL vs Buy & Hold
+- The **blue curve (Strategy PnL)** grows steadily, showing consistent profits.  
+- The **orange curve (Buy & Hold)** remains mostly flat.  
 
-### ✅ 5. True vs Predicted 6h Returns (Sample of 500)
-- Predicted values **closely track ups & downs**.  
-- Better at **medium-term trends** than **high-frequency noise**.
-![Rolling Directional Accuracy](results/plots/true_vs_predicted_sample.png)
+**Key takeaway:** The model significantly **outperforms passive strategies**, demonstrating **clear alpha generation**.
+
+![Cumulative Strategy PnL](results/plots/cumulative_pnl_vs_buyhold.png)
+
 
 ## 📊 Quick Summary Table
 
